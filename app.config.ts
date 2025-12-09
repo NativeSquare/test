@@ -62,7 +62,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     },
     edgeToEdgeEnabled: true,
     predictiveBackGestureEnabled: false,
-    googleServicesFile: getGoogleServicesJson(),
+    // googleServicesFile: getGoogleServicesJson(),
   },
   web: {
     output: "static",
@@ -93,8 +93,14 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   owner: "nativesquare-expo",
   extra: {
     router: {},
+    eas: {
+      projectId: "648f2f6a-3adb-4dbc-b819-edddd0a5b692",
+    },
   },
   runtimeVersion: {
     policy: "appVersion",
+  },
+  updates: {
+    url: "https://u.expo.dev/648f2f6a-3adb-4dbc-b819-edddd0a5b692",
   },
 });
